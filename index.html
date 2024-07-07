@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header> 
+        <img src="\Images\TaskFlow_logo_new.png" alt="TaskFlow Logo" class="logo">
+        <nav id="menu">
+                <button href="home"> Home </button>
+                <button id="loginButton"> Login </button>
+                <button href="AboutUs"> About Us </button>
+                <button id="contactUs"> Contact Us </button>
+                <button href="FAQ"> FAQ </button>
+        </nav>
+        
+    </header>
+        <main>
+                <h1>Welcome to TaskFlow!</h1>
+                <h2>A task management application suited to fit your needs in the workplace.</h2>
+                <section> 
+                    <h3>Some of Our Features:</h3>
+                    <ul>
+                        <li>View tasks assigned to you</li>
+                        <li> Assign tasks to your employees</li>
+                        <li> Add tasks to your task list</li>
+                        <li> Mark tasks as complete</li>
+                        <li> Edit tasks </li>
+                    </ul>
+                </section>
+                <section id="try-it-out-add">
+                    <h2> Try It Out Here!</h2>
+                </section>
+            
+                    <h3>Add a New Task!</h3>
+                    <form id="addForm">
+                        <label for="taskName"> Task Name: </label>
+                        <input type="text" id="taskName" name="taskName" required><br><br>
+                        <label for="priority"> Priority: </label>
+                        <select name="priority" id="priority"> 
+                            <option value= "high"> High</option>
+                            <option value="medium"> Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        <label for="dueDate"> Due Date: </label>
+                        <input type="date" id="dueDate" name="dueDate" required><br><br>
+                        <input type="submit" value="Add Task" >
+                    </form>
+
+                </section>
+                <h3 id="companies-using-us"> Companies Using Our App:</h3>
+                <ul id="company-list">
+                </ul>
+                <dialog id="myPopUp">
+                    <h4>Contact Us! <span id='clicked'></span></h4>
+                </dialog>
+        </main>
+<footer>
+    &copy;Mid-Module 3 - Ami Udvari
+</footer>
+<script src="javascript.js"></script>
+</body>
+</html>
